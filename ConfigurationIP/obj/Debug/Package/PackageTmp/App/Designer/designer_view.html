@@ -1,0 +1,49 @@
+﻿<section id="loginform" class="outer-wrapper">
+        <div class="container ">
+            <div class="row" style="margin-top:20%; margin-bottom:20%">
+                <h2 class="text-center"><img sizes="20px" src="../../Content/img/m2logo.svg" height="85" width="88"></h2>
+                
+                <div class="col-md-10 col-md-offset-3">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label  class="col-sm-2  control-label">IP-адрес</label>
+                            <div class="col-md-3 ">
+                                <input type="text" class=" input-color form-control input-sm " style="border-radius:20px; border-color: #353535" placeholder="Enter ip adress" ng-model="vm.ipAddress" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Маска</label>
+                            <div class="col-md-3">
+                                <input type="text" class=" input-color form-control input-sm" style="border-radius:20px; border-color: #353535" placeholder="Enter masck" ng-model="vm.Mask" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Шлюз</label>
+                            <div class="col-md-3">
+                                <input type="text" class=" input-color form-control input-sm" style="border-radius:20px; border-color: #353535" placeholder="Enter gateway" ng-model="vm.Gateway" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">DNS-сервер</label>
+                            <div class="col-md-3">
+                                <input type="text" class="input-color form-control input-sm" style="border-radius:20px; border-color: #353535" placeholder="Enter dns" ng-model="vm.Dns" />
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label class="col-sm-2 control-label"></label>
+                            <div class="col-md-3  " style="margin: 10px;">
+                                <input style="border-radius:20px; border-color: #353535" type="button" class=" input-color btn btn-primary" value="Применить" ng-click="vm.generate()" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label"></label>
+                            <div class="col-md-3 " style="margin: 10px;">
+                                <button class=' input-color btn ' ng-click="vm.turnOnPC()"><i class='glyphicon glyphicon-off' style="font-size:20px"></i></button>
+                                <button class=' input-color btn ' ng-click="vm.reboot()"><i class='glyphicon glyphicon-repeat' style="font-size:20px"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>
