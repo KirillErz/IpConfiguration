@@ -47,10 +47,10 @@
 
                 
                 ////4C:CC:6A:D4:28:B1 my
-                ////9C:5C:8E:BC:9B:D1
-                this.transport.request("POST", "/api/Generate/SetSettingsIP", { MacName: "9C:5C:8E:BC:9B:D1", ipAddress: this.ipAddress, subnet: this.Mask, gateway: this.Gateway, dns:this.Dns}).then(response => {
-                  
-                });                
+                ////9C:5C:8E:BC:9B:D1             
+                this.transport.request("POST", "/api/Generate/SetSettingsIP", { MacName: "9C:5C:8E:BC:9B:D1", ipAddress: this.ipAddress, subnet: this.Mask, gateway: this.Gateway, dns: this.Dns }).then(response => {
+
+                });   
             };
 
             this.turnOnPC = () => {

@@ -9,37 +9,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App/App.js">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/App.js.map">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/Designer/DesignerCtrl.js">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/Designer/DesignerCtrl.js.map">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/Designer/designer_view.html">
       <publishTime>06/12/2019 23:31:47</publishTime>
     </File>
     <File Include="App/Directives.js">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/Directives.js.map">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/MainCtrl.js">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/MainCtrl.js.map">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/_services/TransportService.js">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="App/_services/TransportService.js.map">
-      <publishTime>06/13/2019 16:02:22</publishTime>
+      <publishTime>06/17/2019 11:07:08</publishTime>
     </File>
     <File Include="ApplicationInsights.config">
       <publishTime>06/18/2018 14:53:09</publishTime>
@@ -54,10 +54,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2018 14:53:09</publishTime>
     </File>
     <File Include="bin/ConfigurationIP.dll">
-      <publishTime>06/13/2019 16:02:24</publishTime>
+      <publishTime>06/17/2019 11:07:10</publishTime>
     </File>
     <File Include="bin/ConfigurationIP.pdb">
-      <publishTime>06/13/2019 16:02:24</publishTime>
+      <publishTime>06/17/2019 11:07:10</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>11/30/2016 16:07:42</publishTime>
@@ -2562,7 +2562,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/07/2019 11:43:01</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/13/2019 16:02:41</publishTime>
+      <publishTime>06/17/2019 11:07:36</publishTime>
     </File>
   </ItemGroup>
 </Project>

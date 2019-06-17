@@ -30,7 +30,7 @@ var ConfigurationIP;
             this._getSettingsIp();
             this.generate = function () {
                 ////4C:CC:6A:D4:28:B1 my
-                ////9C:5C:8E:BC:9B:D1
+                ////9C:5C:8E:BC:9B:D1             
                 _this.transport.request("POST", "/api/Generate/SetSettingsIP", { MacName: "9C:5C:8E:BC:9B:D1", ipAddress: _this.ipAddress, subnet: _this.Mask, gateway: _this.Gateway, dns: _this.Dns }).then(function (response) {
                 });
             };

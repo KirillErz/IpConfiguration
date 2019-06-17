@@ -69,18 +69,18 @@ namespace ConfigurationIP.Controllers
                     {
                         if (objMO["MACAddress"].Equals(ipProperties.MacName))
                         {
-                            string ethernet = "Ethernet";
-                            //File.WriteAllText(@"c:\temp\setIp.bat", "@echo off\necho Choose:\necho[A] Set Static IP\necho[B] Set DHCP\necho.\n: choice \nSET / P C =[A, B] ?\nfor %%? in (A) do if / I ' % C % ' == ' %%? ' goto A\nfor %%? in (B) do if / I ' % C % ' == ' %%? ' goto B\ngoto choice\n: A\n@echo off \necho 'Please enter Static IP Address Information'\necho 'Static IP Address:\nset /p IP_Addr=" + ipProperties.ipAddress + "\n" + "echo 'Default Gateway:'\nset /p D_Gate=" + ipProperties.gateway + "\n" + "echo 'Subnet Mask:'\nset /p Sub_Mask=" + ipProperties.subnet + "\n" + "echo 'Setting Static IP Information'\nnetsh interface ip set address 'Ethernet' static %IP_Addr% %Sub_Mask% %D_Gate% 1\nnetsh int ip show config\npause\ngoto end\n      \n:B\n@ECHO OFF\nECHO Resetting IP Address and Subnet Mask For DHCP \nnetsh int ip set address name = 'Ethernet' source = dhcp\n       \nipconfig /renew\n    \nECHO Here are the new settings for %computername%:\nnetsh int ip show config\n     \npause\ngoto end\n:end", Encoding.Default);
-                            File.WriteAllText(@"c:\temp\ipSet.bat","netsh interface ip set address "+'"'+ethernet+'"'+" static "+ipProperties.ipAddress+" "+ ipProperties.subnet+" "+ipProperties.gateway+ " 1\nnetsh interface ip set dns "+'"'+ethernet+'"'+ " static "+ipProperties.dns+"\n", Encoding.Default);
-                            File.WriteAllText(@"c:\MAMP\htdocs\ip.txt", ipProperties.ipAddress, Encoding.Default);
-                            System.Diagnostics.Process proc = new System.Diagnostics.Process();
-                            proc.StartInfo.UseShellExecute = false;
+                            string ethernet = "Ethernet";                          
+                            File.WriteAllText(@"c:\temp\ipSet.bat","netsh interface ip set address "+'"'+ethernet+'"'+" static "+ipProperties.ipAddress+" "+ ipProperties.subnet+" "+ipProperties.gateway+" "+"1 "+ "\r\nnetsh interface ip set dns " + '"'+ethernet+'"'+ " static "+ipProperties.dns, Encoding.Default);
+                            File.WriteAllText(@"c:\MAMP\htdocs\ip.txt",ipProperties.ipAddress,Encoding.Default);
+                            //System.Diagnostics.Process proc = new System.Diagnostics.Process();
+                            //proc.StartInfo.UseShellExecute = false;
                             //proc.StartInfo.Domain = "HQMCDSOFT";
-                            proc.StartInfo.UserName = "m2vw";
-                            proc.StartInfo.Password = ReadPassword("AW6H7woz");
-                            proc.StartInfo.FileName = @"c:\temp\ipSet.bat";
-                            proc.StartInfo.WorkingDirectory = @"c:\temp";
-                            proc.Start();
+                            //proc.StartInfo.UserName = "kiriller";
+                            //proc.StartInfo.Password = ReadPassword("Erich1970Maria");
+                            //proc.StartInfo.FileName = @"C:\temp\ipSet.bat — ярлык.lnk";
+                            //proc.StartInfo.WorkingDirectory = @"c:\temp";
+                            //proc.Start();
+                            Process.Start(@"C:\temp\ipSet.bat — ярлык.lnk");
                         }
                     }
                 }
